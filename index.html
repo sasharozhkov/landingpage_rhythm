@@ -12,99 +12,81 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <div class="wrapper">
+
         <header class="header">
-            <div id="header__container" class="_container">
-                <div class="header__body">
-                    <div class="header__wrapper">
+            <div class="header__container">
 
-                        <!-- logo -->
-                        <a title="На самый верх" href="#up" class="header__logo">
+                <!-- logo -->
+                <a href="" class="header__logo">
+                    <img src="./assets/img/header/logo/logo.svg" alt="Logo">
+                </a>
 
+                <!-- menu -->
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
 
-                        </a>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Магазин</a>
+                        </li>
 
-                        <!-- menu -->
-                        <div class="header__menu menu">
-                            <button name="burger" class="menu__icon">
-                                <span></span>
-                            </button>
-                        </div>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Коллекция</a>
+                        </li>
 
-                        <!-- menu -->
-                        <nav class="menu__body">
-                            <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Поддержка</a>
+                        </li>
 
-                                <li>
-                                    <a class="menu__link" data-goto=".page" href="#">Главная</a>
-                                </li>
+                    </ul>
+                </nav>
 
-                                <li>
-                                    <a class="menu__link" href="#">Портфолио</a>
-                                </li>
-
-                                <li><a class="menu__link" data-goto=".three" href="#">Стоимость</a>
-                                    <span class="menu__arrow"></span>
-                                    <ul class="menu__sub-list">
-                                        <li><a class="menu__sub-link" href="https://t.me/alexrozhkovcom"
-                                                target="_blank">Узнать
-                                                стоимость</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a class="menu__link" data-goto=".footer" href="#">Контакты</a>
-                                    <span class="menu__arrow"></span>
-                                    <ul class="menu__sub-list">
-                                        <li><a class="menu__sub-link" href="mailto:alexander_rozhkov@icloud.com"
-                                                target="_blank">Почта
-                                            </a>
-                                        </li>
-                                        <li><a class="menu__sub-link" href="https://t.me/alexrozhkovcom"
-                                                target="_blank">Телеграм
-                                            </a>
-                                        </li>
-                                        <li><a class="menu__sub-link" href="https://vk.com/alexrozhkovcom"
-                                                target="_blank">Вконтакте
-                                            </a>
-                                        </li>
-                                        <li><a class="menu__sub-link" href="https://www.facebook.com/alexrozhkovcom"
-                                                target="_blank">Фейсбук
-                                            </a>
-                                        </li>
-                                        <li><a class="menu__sub-link" href="https://www.instagram.com/alexrozhkovcom"
-                                                target="_blank">Инстаграм
-                                            </a>
-                                        </li>
-                                        <li><a class="menu__sub-link" href="https://twitter.com/alexrozhkovcom"
-                                                target="_blank">Твиттер
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
         </header>
 
-        <main class="page" id="up">
-            <section class="page__main-block main-block">
+        <main class="page">
+            <section class="page__main main">
+                <div class="main__container">
+                    <div class="main__content">
+                        <h1 class="main__title">Выбор лучшей <span>Гитары</span> онлайн</h1>
+                        <p class="main__text">Исследуйте более 50 тысяч последних коллекций фирменных гитар онлайн с
+                            Ритм.</p>
+                        <div class="main__actions actions-main">
+                            <a href="#" class="actions-main__button">В приложение</a>
+                            <div class="action-main__icon">
+                                <img src="./assets/img/main/google.svg" alt="Google icon">
+                            </div>
+                            <div class="action-main__icon">
+                                <img src="./assets/img/main/apple.svg" alt="Apple icon">
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="main__decor">
+
+                        <div class="main__image">
+                            <img src="./assets/img/main/main-decor.png" alt="Main Decor">
+                        </div>
+
+                    </div>
+
+                </div>
             </section>
         </main>
 
         <footer class="footer">
         </footer>
+
     </div>
 
     <!-- script -->
