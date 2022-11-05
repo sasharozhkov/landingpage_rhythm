@@ -208,12 +208,11 @@ body._lock {
 }
 
 #header__container {
-  padding-top: 5px;
   padding-bottom: 5px;
   display: flex;
   gap: 131px;
   align-items: center;
-  min-height: 152px;
+  min-height: 100px;
 }
 
 .header__logo {
@@ -225,7 +224,7 @@ body._lock {
   height: 2px;
 }
 .progress-bar {
-  height: 4px;
+  height: 3px;
   background: #ff6428;
   width: 0%;
 }
@@ -246,6 +245,8 @@ body._lock {
 }
 .menu__body {
   margin: 0px;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 .menu__list > li {
   position: relative;
@@ -338,16 +339,6 @@ body._touch .menu__link {
 
   .menu__body._active {
     left: 0;
-  }
-
-  .menu__body::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 70px;
-    z-index: 2;
   }
 
   .menu__list > li {
@@ -648,7 +639,7 @@ body._touch .menu__link {
   .main__content {
     flex: 1 1 100%;
     padding-right: 0;
-    padding-top: 80px;
+    padding-top: 100px;
   }
 
   .main__decor {

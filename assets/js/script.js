@@ -61,11 +61,11 @@ function myFunction() {
     /* change size header__container when page scroll */
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
         document.getElementById("header__container")
-            .style.minHeight = "60px";
+            .style.minHeight = "50px";
     }
     else {
         document.getElementById("header__container")
-            .style.minHeight = "152px";
+            .style.minHeight = "100px";
     }
 }
 
