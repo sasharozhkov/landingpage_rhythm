@@ -1,49 +1,5 @@
 "user strict";
 
-// проверяем какой телефон используется
-const isMobile = {
-    Android: function () {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function () {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function () {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function () {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function () {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function () {
-        return (
-            isMobile.Android() ||
-            isMobile.BlackBerry() ||
-            isMobile.iOS() ||
-            isMobile.Opera() ||
-            isMobile.Windows());
-    }
-};
-
-if (isMobile.any()) {
-    document.body.classList.add('_touch');
-
-    let menuArrows = document.querySelectorAll('.menu__arrow');
-    if (menuArrows.length > 0) {
-        for (let index = 0; index < menuArrows.length; index++) {
-            const menuArrow = menuArrows[index];
-            menuArrow.addEventListener("click", function (e) {
-                menuArrow.parentElement.classList.toggle('_active');
-            });
-        }
-    }
-
-} else {
-    document.body.classList.add('_pc');
-}
-
 /* burger menu*/
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
@@ -81,6 +37,35 @@ if (menuLinks.length > 0) {
             });
             e.preventDefault();
         }
+    }
+}
+
+window.onscroll = function () { myFunction() };
+
+/* progress bar */
+const header = document.querySelector('header');
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    var top = window.scrollY;
+    document.getElementById("myBar").style.width = scrolled + "%";
+
+    /* change background when page scroll */
+    if (top >= 50) {
+        header.classList.add('active')
+    } else {
+        header.classList.remove('active')
+    }
+
+    /* change size header__container when page scroll */
+    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+        document.getElementById("header__container")
+            .style.minHeight = "60px";
+    }
+    else {
+        document.getElementById("header__container")
+            .style.minHeight = "152px";
     }
 }
 
