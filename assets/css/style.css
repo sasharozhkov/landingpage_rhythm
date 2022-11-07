@@ -923,6 +923,124 @@ body._touch .menu__link {
   max-width: 100%;
 }
 
+/* footer */
+
+.footer {
+  background: #eeeeee;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.footer__container {
+}
+.footer__body {
+}
+.body-footer {
+  display: flex;
+  gap: 50px;
+}
+.body-footer__column {
+}
+.body-footer__column_full {
+  flex: 1 1 auto;
+}
+.body-footer__logo {
+  display: inline-block;
+}
+.body-footer__logo:not(:last-child) {
+  margin-bottom: 28px;
+}
+.body-footer__contacts {
+}
+.contacts-footer {
+}
+.contacts-footer__item {
+}
+.contacts-footer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts-footer__link {
+  color: #666;
+  display: inline-block;
+  line-height: 24px;
+  padding-left: 44px;
+}
+.contacts-footer__link:hover {
+  text-decoration: underline;
+}
+.ontacts-footer__link_mail {
+  background: url(../img/main/footer/sms.svg) left no-repeat;
+}
+.ontacts-footer__link_location {
+  background: url(../img/main/footer/location.svg) left no-repeat;
+}
+.body-footer__menu {
+}
+.menu-footer {
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+}
+.menu-footer__column {
+}
+.menu-footer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #121212;
+  margin-bottom: 20px;
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+}
+.menu-footer__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.menu-footer__link {
+  color: #666;
+}
+.menu-footer__link:hover {
+  text-decoration: underline;
+}
+.body-footer__social {
+}
+.social-footer {
+}
+.social-footer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #121212;
+  margin-bottom: 12px;
+}
+.social-footer__items {
+  display: flex;
+  gap: 30px;
+}
+.social-footer__item {
+}
+.social-footer__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer__copy {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.footer__copy:hover {
+  text-decoration: underline;
+}
+
+.footer__copy-style {
+  color: #666;
+  background: url(../img/main/footer/alexrozhkov.svg) right no-repeat;
+  background-size: 20px 20px;
+  padding-right: 30px;
+  line-height: 190%;
+}
+
 @media (max-width: 1230px) {
   .categories__items {
     column-gap: 40px;
@@ -1054,9 +1172,28 @@ body._touch .menu__link {
   .favorite__title {
     font-size: 38px;
   }
-
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .favorite__title:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .body-footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .body-footer__column:first-child {
+    flex: 1 1 100%;
+  }
+  .menu-footer {
+    display: flex;
+    gap: 50px;
+
+    justify-content: space-between;
+  }
+  .body-footer__column_full {
+    flex: 0 1 50%;
   }
 }
 
@@ -1144,6 +1281,10 @@ body._touch .menu__link {
 
   .favorite {
     padding-bottom: 30px;
+  }
+
+  .footer__copy {
+    padding-top: 50px;
   }
 }
 
