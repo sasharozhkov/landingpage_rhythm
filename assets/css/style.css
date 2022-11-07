@@ -826,7 +826,7 @@ body._touch .menu__link {
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: center;
+  object-fit: cover;
 }
 .slide-swiper-reviews__body {
   flex: 0 1 50%;
